@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://lunatio.com/phpshort/documentation#installation -->
+<html lang="en" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="buXgB97GvEZ9PQDNgegndZwg3gZVyfgH5Hr2hxgN">
+
+    <title>phpShort - Documentation - Lunatio</title>
+
+    <link rel="icon" type="image/png" href="https://lunatio.com/favicon.png">
+
+    
+    <!-- Scripts -->
+    <script src="./phpShort_files/app.js.download" defer=""></script>
+
+    <!-- Styles -->
+    <link href="./phpShort_files/inter.css" rel="stylesheet">
+    <link href="./phpShort_files/app.css" rel="stylesheet">
+</head>
+    <body class="d-flex flex-column" data-spy="scroll" data-offset="96" data-target="#navbar-documentation" data-new-gr-c-s-check-loaded="14.1028.0" data-gr-ext-installed="">
+    <div id="header" class="header sticky-top     position-relative
+ z-1000 bg-gray-900">
+    <div class="border-bottom border-white-10">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark px-0 py-3">
+                <a class="navbar-brand opacity-90 hover:opacity-100 d-flex align-items-center" href="https://lunatio.com/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" class="width-8 height-8"><title>Lunatio</title><path d="M70,36.52A33.48,33.48,0,1,1,36.52,70,33.52,33.52,0,0,1,70,36.52m0-15A48.48,48.48,0,1,0,118.48,70,48.47,48.47,0,0,0,70,21.52Z" style="fill:#fff"></path><path d="M77.94,110.21A87.61,87.61,0,0,0,87.6,70a87.61,87.61,0,0,0-9.66-40.21,41,41,0,0,1,0,80.42Z" style="fill:#fff"></path><path d="M91.69,44.51a33.45,33.45,0,0,1,0,51A95.91,95.91,0,0,0,95.1,70a95.91,95.91,0,0,0-3.41-25.49M70,21.52a50.6,50.6,0,0,0-5.8.35A80.43,80.43,0,0,1,80.1,70a80.43,80.43,0,0,1-15.9,48.13,50.6,50.6,0,0,0,5.8.35,48.48,48.48,0,0,0,0-97Z" style="fill:#fff"></path><path d="M118.49,26.71A65,65,0,1,0,135,70,64.87,64.87,0,0,0,118.49,26.71Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:10px"></path></svg>
+
+                    <div class="h5 ml-3 my-0">Lunatio</div>
+                </a>
+
+                <button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-primary">
+                    <ul class="navbar-nav pt-2 p-lg-0 ml-lg-auto">
+                        <li class="nav-item px-lg-3 py-1 py-lg-0">
+                            <a class="nav-link " href="https://lunatio.com/" role="button">Home</a>
+                        </li>
+
+                        <li class="nav-item px-lg-3 py-1 py-lg-0">
+                            <a class="nav-link " href="https://lunatio.com/services" role="button">Services</a>
+                        </li>
+
+                        <li class="nav-item pl-lg-3 pr-lg-0 py-1 py-lg-0">
+                            <a class="nav-link " href="https://lunatio.com/contact" role="button">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="header-2" class="position-sticky sticky-top overflow-auto">
+    <div class="bg-gray-900 border-bottom border-white-10">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark px-0 py-3 justify-content-between">
+                <a href="https://lunatio.com/phpshort" class="h5 navbar-brand font-weight-bold text-white m-0">phpShort</a>
+
+                <button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse" data-target="#product-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="ml-auto collapse navbar-collapse" id="product-navbar">
+                    <ul class="navbar-nav pt-2 p-lg-0 ml-lg-auto">
+                        <li class="nav-item px-lg-3 py-1 py-lg-0">
+                            <a class="nav-link " href="https://lunatio.com/phpshort" role="button">Overview</a>
+                        </li>
+
+                        <li class="nav-item px-lg-3 py-1 py-lg-0">
+                            <a class="nav-link " href="https://lunatio.com/phpshort/changelog" role="button">Changelog</a>
+                        </li>
+
+                        <li class="nav-item px-lg-3 py-1 py-lg-0">
+                            <a class="nav-link active" href="https://lunatio.com/phpshort/documentation" role="button">Documentation</a>
+                        </li>
+
+                                                <li class="nav-item px-lg-3 py-1 py-lg-0">
+                            <a class="nav-link text-primary d-flex align-items-center" href="https://phpshort.lunatio.com/" target="_blank" rel="nofollow" role="button">Demo <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-3 height-3 ml-2" viewBox="0 0 15 15"><path d="M5,0V2h6.59L0,13.59,1.41,15,13,3.41V10h2V0Z"></path></svg></a>
+                        </li>
+                        
+                                                <li class="nav-item pl-lg-3 pr-lg-0 py-1 py-lg-0">
+                            <a class="nav-link text-primary d-flex align-items-center" href="https://1.envato.market/xW94O" target="_blank" rel="nofollow" role="button">Buy <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-3 height-3 ml-2" viewBox="0 0 15 15"><path d="M5,0V2h6.59L0,13.59,1.41,15,13,3.41V10h2V0Z"></path></svg></a>
+                        </li>
+                                            </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+    <div class="d-flex flex-column flex-fill ">
+            <div class="d-flex flex-column flex-fill z-100">
+    <div class="container my-5">
+        <h2 class="font-weight-bold mb-5">Documentation</h2>
+        <div class="row mt-n2">
+            <div class="col-12 col-lg-3">
+                <div class="position-relative overflow-auto">
+                    <nav class="navbar navbar-light py-0 mb-5">
+    <ul class="navbar-nav flex-column ml-n3 position-lg-fixed" id="navbar-documentation" style="top: 95px;">
+                    <li class="nav-item font-weight-medium font-size-lg">
+                <a class="nav-link" href="https://lunatio.com/phpshort/documentation#overview" role="button">Overview</a>
+            </li>
+                    <li class="nav-item font-weight-medium font-size-lg">
+                <a class="nav-link" href="https://lunatio.com/phpshort/documentation#requirements" role="button">Requirements</a>
+            </li>
+                    <li class="nav-item font-weight-medium font-size-lg">
+                <a class="nav-link active" href="https://lunatio.com/phpshort/documentation#installation" role="button">Installation</a>
+            </li>
+                    <li class="nav-item font-weight-medium font-size-lg">
+                <a class="nav-link" href="https://lunatio.com/phpshort/documentation#configuration" role="button">Configuration</a>
+            </li>
+                    <li class="nav-item font-weight-medium font-size-lg">
+                <a class="nav-link" href="https://lunatio.com/phpshort/documentation#update" role="button">Update</a>
+            </li>
+                    <li class="nav-item font-weight-medium font-size-lg">
+                <a class="nav-link" href="https://lunatio.com/phpshort/documentation#faq" role="button">FAQ</a>
+            </li>
+            </ul>
+</nav>                </div>
+            </div>
+
+            <div class="col-12 col-lg-9">
+                <div class="documentation-container">
+                    <div class="documentation-content">
+
+                        <div class="doc-section mb-5">
+                            <h4 class="py-2 font-weight-semibold" id="overview"><span class="text-muted">1. </span>Overview</h4>
+
+                            <p>This Documentation describes the installation and configuration steps of <a href="https://lunatio.com/phpshort" class="text-primary font-weight-medium">phpShort</a>.</p>
+
+                            <p>While the installation process is rather simple, some of the instructions presented here will require minimum understanding in working with databases and managing files on a server.</p>
+
+                            <p>If you're not familiar with the procedures presented, we do offer installation <a href="https://lunatio.com/services" class="text-primary font-weight-medium" data-scroll-to="75">Services</a> for an additional fee.</p>
+                        </div>
+
+                        <hr class="my-5">
+
+                        <div class="doc-section mb-5">
+                            <h4 class="py-2 font-weight-semibold" id="requirements"><span class="text-muted">2. </span>Requirements</h4>
+
+                            <p>Please ensure that your server meets the following minimum requirements:</p>
+
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                <tr>
+                                    <th>Software</th>
+                                    <th>Modules</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td>PHP 7.2.5+</td>
+                                    <td>BCMath, Ctype, Fileinfo, JSON, Mbstring, OpenSSL, PDO, Tokenizer, XML, GD, cURL</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Apache 2+</td>
+                                    <td>mod_rewrite</td>
+                                </tr>
+
+                                <tr>
+                                    <td>MySQL 5.7.7+<br>MariaDB 10.3.17</td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <hr class="my-5">
+
+                        <div class="doc-section mb-5">
+                            <h4 class="py-2 font-weight-semibold" id="installation"><span class="text-muted">3. </span>Installation</h4>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="installation-database-creation"><span class="text-muted">3.1. </span>Creating and configuring the database</h6>
+                                <p>
+                                    If you already have an empty database, a database username and password, you can skip the next steps.
+                                </p>
+                                <ol>
+                                    <li class="pb-1">Create a new MySQL database.</li>
+
+                                    <li class="pb-1">Create a new MySQL username and password.</li>
+
+                                    <li>Assign full privileges to your database username.</li>
+                                </ol>
+
+                                <section class="small mb-3">
+                                    <div class="font-weight-medium text-muted">Useful resources</div>
+                                    <div><a href="https://docs.cpanel.net/cpanel/databases/mysql-database-wizard/" class="text-primary" target="_blank" rel="nofollow">cPanel - MySQL Database Wizard</a></div>
+                                    <div><a href="https://docs.plesk.com/en-US/obsidian/customer-guide/website-databases.69535/" class="text-primary" target="_blank" rel="nofollow">Plesk - Website databases</a></div>
+                                </section>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="installation-file-uploading"><span class="text-muted">3.2. </span>Uploading the files</h6>
+
+                                <div class="alert alert-info">On some operating systems, the dotfiles are hidden by default. Before starting to upload the files, please make sure your file explorer has the option to view hidden files turned on.</div>
+
+                                <p>Upload what's inside the <code class="badge badge-dark">Script</code> folder on the web root folder of your domain. This folder is generally called <code class="badge badge-dark">public_html</code>, <code class="badge badge-dark">html</code>, or <code class="badge badge-dark">example.com</code>, but depending on your server's configuration, it might be named differently.</p>
+
+                                <section class="small mb-3">
+                                    <div class="font-weight-medium text-muted">Useful resources</div>
+                                    <div><a href="https://docs.cpanel.net/cpanel/files/file-manager/#overview" class="text-primary" target="_blank" rel="nofollow">cPanel - File Manager</a></div>
+                                    <div><a href="http://docs.plesk.com/en-US/12.5/customer-guide/websites-and-domains/website-content/uploading-content-with-file-manager.74105/" class="text-primary" target="_blank" rel="nofollow">Plesk - Uploading content with File Manager</a></div>
+                                </section>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="installation-file-configuration"><span class="text-muted">3.3. </span>Configuring the files</h6>
+
+                                <p class="pb-1">Set the access permissions (<span class="font-weight-medium">CHMOD</span>) to <code class="badge badge-dark">775</code> to the following files and folders:</p>
+
+                                <section>
+                                    <h6>Files</h6>
+                                    <ul>
+                                        <li class="pb-1">.env</li>
+                                    </ul>
+                                </section>
+
+                                <section>
+                                    <h6>Folders</h6>
+                                    <ul>
+                                        <li class="pb-1">bootstrap/cache</li>
+                                        <li class="pb-1">public/uploads/brand</li>
+                                        <li class="pb-1">resources/lang</li>
+                                        <li class="pb-1">storage</li>
+                                        <li class="pb-1">storage/framework/</li>
+                                        <li class="pb-1">storage/framework/cache</li>
+                                        <li class="pb-1">storage/framework/cache/data</li>
+                                        <li class="pb-1">storage/framework/sessions</li>
+                                        <li class="pb-1">storage/framework/views</li>
+                                        <li>storage/logs</li>
+                                    </ul>
+                                </section>
+
+                                <section class="small mb-3">
+                                    <div class="font-weight-medium text-muted">Useful resources</div>
+                                    <div><a href="https://docs.cpanel.net/cpanel/files/file-manager/#update-file-or-folder-permissions" class="text-primary" target="_blank" rel="nofollow">cPanel - Update file or folder permissions</a></div>
+                                    <div><a href="http://docs.plesk.com/en-US/12.5/customer-guide/websites-and-domains/website-content/setting-file-and-directory-access-permissions.70738/" class="text-primary" target="_blank" rel="nofollow">Plesk - Setting file and directory access permissions</a></div>
+                                    <div></div>
+                                </section>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="installation-directory-configuration"><span class="text-muted">3.4. </span>Changing the public directory <span class="badge badge-danger">Important</span></h6>
+
+                                <p>Configure your web server's document / web root to point to the <code class="badge badge-dark">public</code> directory of the software. For example, if you've uploaded the software in <code class="badge badge-dark">example.com</code> folder, your web directory should be changed to <code class="badge badge-dark">example.com/public</code> folder.</p>
+
+                                <section class="small mb-3">
+                                    <div class="font-weight-medium text-muted">Useful resources</div>
+                                    <div><a href="https://docs.cpanel.net/cpanel/domains/domains/#new-document-root" class="text-primary" target="_blank" rel="nofollow">cPanel - New document root</a></div>
+                                    <div><a href="https://docs.plesk.com/en-US/obsidian/administrator-guide/77500/" class="text-primary" target="_blank" rel="nofollow">Plesk - Defining a custom document root</a></div>
+                                </section>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="installation-finishing"><span class="text-muted">3.5. </span>Finishing the installation</h6>
+                                <ol>
+                                    <li class="pb-1">Go to <code class="badge badge-dark">https://example.com/install</code> and follow the installation wizard.</li>
+
+                                    <li class="pb-1">Once you've installed the software, login into your account, and go to <code class="badge badge-dark">https://example.com/admin</code>.</li>
+
+                                    <li>You'll be asked to activate your License Key. See <a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-" target="_blank" rel="noreferrer" class="text-primary font-weight-medium">how to retrieve your license key</a>.</li>
+                                </ol>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="installation-cronjobs"><span class="text-muted">3.6. </span>Setting up the cron jobs</h6>
+
+                                <p>The software requires cron jobs to be set up in order to automate some of its functions, such as sending out periodic emails, checking the status of the accounts, as well as additional database clean-ups.</p>
+
+                                <ol>
+                                    <li class="pb-1">Go to <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Settings <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Cron jobs</span>.</li>
+
+                                    <li class="pb-1">Copy the <span class="badge badge-dark">cache</span> command and set up a <span class="font-weight-medium">weekly</span> cron job for it.</li>
+                                </ol>
+
+                                <section class="small mb-3">
+                                    <div class="font-weight-medium text-muted">Useful resources</div>
+                                    <div><a href="https://docs.cpanel.net/cpanel/advanced/cron-jobs/#add-a-cron-job" class="text-primary" target="_blank" rel="nofollow">cPanel - Cron Jobs</a></div>
+                                    <div><a href="https://docs.plesk.com/en-US/obsidian/administrator-guide/server-administration/scheduling-tasks.64993/" class="text-primary" target="_blank" rel="nofollow">Plesk - Scheduling Tasks</a></div>
+                                </section>
+                            </div>
+                        </div>
+
+                        <hr class="my-5">
+
+                        <div class="doc-section mb-5">
+                            <h4 class="py-2 font-weight-semibold" id="configuration"><span class="text-muted">4. </span>Configuration</h4>
+                            <p>Most of the software's settings are pretty straight forward and self explanatory, but some of them require more advanced steps to get them working, which are covered in this chapter.</p>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="configuration-payment"><span class="text-muted">4.1. </span>Payment processors</h6>
+
+                                <p>
+                                    To enable any of the payment processors, an <span class="font-weight-medium">Extended</span> license is required. The payment processors can be enabled from <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Settings <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Payment processors</span>.
+                                </p>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="configuration-payment-stripe"><span class="text-muted">4.1.1. </span>Stripe</h6>
+                                <ol>
+                                    <li class="pb-1">Login into your <a href="https://dashboard.stripe.com/login" target="_blank" rel="nofollow" class="text-primary font-weight-medium">Stripe</a> account.</li>
+
+                                    <li class="pb-1">From the sidebar, go to the <span class="font-weight-medium">Developers</span> section of the Stripe dashboard and click on <a href="https://dashboard.stripe.com/account/apikeys" target="_blank" rel="nofollow" class="text-primary font-weight-medium">API Keys</a>.</li>
+
+                                    <li class="pb-1">Copy the <code class="badge badge-dark">Publishable key</code> and <code class="badge badge-dark">Secret key</code> in <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Settings <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Payment processors <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Stripe</span>.</li>
+                                </ol>
+
+                                <ol start="4">
+                                    <li class="pb-1">From the sidebar, go to the <span class="font-weight-medium">Developers</span> section of the Stripe dashboard and click on <a href="https://dashboard.stripe.com/account/webhooks" target="_blank" rel="nofollow" class="text-primary font-weight-medium">Webhooks</a>.</li>
+
+                                    <li class="pb-1">Click on <span class="font-weight-medium">Add a new endpoint.</span></li>
+
+                                    <li class="pb-1">On the <code class="badge badge-dark">Endpoint URL</code> field paste your webhook URL, this can be found on <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Settings <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Payment processors <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Stripe</span>.</li>
+
+                                    <li class="pb-1">On the <span class="font-weight-medium">Version</span> field, select the <span class="font-weight-medium">latest</span> version.</li>
+
+                                    <li class="pb-1">On the <span class="font-weight-medium">Events to send</span> field, click on <span class="font-weight-medium">receive all events</span>, and click the <span class="font-weight-medium">Add endpoint</span> button.</li>
+
+                                    <li class="pb-1">Copy the <code class="badge badge-dark">Signing secret</code> in <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Settings <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Payment processor <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Stripe</span>.</li>
+                                </ol>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="configuration-payment-paypal"><span class="text-muted">4.1.2. </span>PayPal</h6>
+                                <ol>
+                                    <li class="pb-1">Login into your <a href="https://developer.paypal.com/developer/applications" target="_blank" rel="nofollow" class="text-primary font-weight-medium">PayPal</a> account.</li>
+
+                                    <li class="pb-1">Go to the <a href="https://developer.paypal.com/developer/applications" target="_blank" rel="nofollow" class="text-primary font-weight-medium">My apps &amp; credentials</a> section, click on <span class="font-weight-medium">Live</span> button and then on the <span class="font-weight-medium">Create app</span> button.</li>
+
+                                    <li class="pb-1">Copy the <code class="badge badge-dark">Client ID</code> and <code class="badge badge-dark">Secret</code> in <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Settings <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Payment processors <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">PayPal</span>.</li>
+                                </ol>
+
+                                <ol start="4">
+                                    <li class="pb-1">Go to the <a href="https://developer.paypal.com/developer/applications" target="_blank" rel="nofollow" class="text-primary font-weight-medium">My apps &amp; credentials</a> section, click on <span class="font-weight-medium">Live</span> button and then select your app.</li>
+
+                                    <li class="pb-1">Scroll down to <span class="font-weight-medium">LIVE WEBHOOKS</span> and click on the <span class="font-weight-medium">Add webhook</span> button.</li>
+
+                                    <li class="pb-1">On the <code class="badge badge-dark">Webhook URL</code> field paste your webhook URL. This can be found on <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Settings <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Payment processors <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">PayPal</span>.</li>
+
+                                    <li class="pb-1">Under the <span class="font-weight-medium">Events types</span> select <span class="font-weight-medium">All events</span> and save your changes.</li>
+                                </ol>
+
+                                <ol start="8">
+                                    <li class="pb-1">Go to the <a href="https://developer.paypal.com/developer/applications" target="_blank" rel="nofollow" class="text-primary font-weight-medium">My apps &amp; credentials</a> section, click on <span class="font-weight-medium">Live</span> button and then select your app.</li>
+
+                                    <li class="pb-1">Copy the <code class="badge badge-dark">Webhook ID</code> in <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Settings <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Payment processors <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">PayPal</span>.</li>
+                                </ol>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="configuration-payment-coinbase"><span class="text-muted">4.1.3. </span>Coinbase</h6>
+                                <ol>
+                                    <li class="pb-1">Login into your <a href="https://commerce.coinbase.com/signin" target="_blank" rel="nofollow" class="text-primary font-weight-medium">Coinbase</a> account.</li>
+
+                                    <li class="pb-1">From the sidebar, go to the <span class="font-weight-medium">Settings</span> section of the Coinbase dashboard and scroll down to <span class="font-weight-medium">API keys</span>.</li>
+
+                                    <li class="pb-1">Create an API key, and copy the key in <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Settings <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Payment processors <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Coinbase</span>.</li>
+                                </ol>
+
+                                <ol start="4">
+                                    <li class="pb-1">From the sidebar, go to the <span class="font-weight-medium">Settings</span> section of the Coinbase dashboard and scroll down to <span class="font-weight-medium">Webhook subscriptions</span>.</li>
+
+                                    <li class="pb-1">Click on <span class="font-weight-medium">Add an endpoint.</span></li>
+
+                                    <li class="pb-1">On the <code class="badge badge-dark">Endpoint URL</code> field paste your webhook URL. This can be found on <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Settings <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Payment processors <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Coinbase</span>.</li>
+                                </ol>
+
+                                <ol start="7">
+                                    <li class="pb-1">From the sidebar, go to the <span class="font-weight-medium">Settings</span> section of the Coinbase dashboard and scroll down to <span class="font-weight-medium">Webhook subscriptions</span>.</li>
+
+                                    <li class="pb-1">Click on <span class="font-weight-medium">Show shared secret.</span></li>
+
+                                    <li class="pb-1">Copy the <code class="badge badge-dark">Webhook shared secret</code> in <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Settings <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Payment processors <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Coinbase</span>.</li>
+                                </ol>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="configuration-payment-bank"><span class="text-muted">4.1.4. </span>Bank</h6>
+                                <ul>
+                                    <li class="pb-1">All fields are optional.</li>
+                                </ul>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="configuration-plans"><span class="text-muted">4.2. </span>Plans</h6>
+
+                                <p>Plans can be managed from <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Business <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Plans</span><sup>1</sup>.</p>
+
+                                <ul>
+                                    <li class="pb-1">The <code class="badge badge-dark">Tax rates</code> field allows you to select multiple tax rates. See: <a href="https://lunatio.com/phpshort/documentation#configuration-tax-rates" class="text-primary font-weight-medium" data-scroll-to="75">Tax rates</a> for additional information.</li>
+
+                                    <li class="pb-1">The <code class="badge badge-dark">Coupons</code> field allows you to select multiple coupons. See: <a href="https://lunatio.com/phpshort/documentation#configuration-coupons" class="text-primary font-weight-medium" data-scroll-to="75">Coupons</a> for additional information.</li>
+
+                                    <li class="pb-1">When the <code class="badge badge-dark">Visibility</code> field of a plan is set to <code class="badge badge-dark">Unlisted</code>, the plan will not be listed on the website, but will continue to be accessible by anyone that knows the URL.</li>
+
+                                    <li class="pb-1">Plan features that accept a number can be limited as follows: <code class="badge badge-dark">-1</code> for unlimited, <code class="badge badge-dark">0</code> for none, and <code class="badge badge-dark">N</code> for a specific number.</li>
+                                </ul>
+
+                                <ol class="text-muted small">
+                                    <li class="pb-1">By default, the software comes with a free plan, which is the default plan on all accounts. The default plan cannot be deleted, however its features can be limited.</li>
+                                </ol>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="configuration-tax-rates"><span class="text-muted">4.3. </span>Tax rates</h6>
+
+                                <p>Tax rates can be managed from <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Business <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Tax Rates</span>.</p>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="configuration-coupons"><span class="text-muted">4.4. </span>Coupons</h6>
+
+                                <p>Coupons can be managed from <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Business <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Coupons</span>.</p>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="configuration-emails"><span class="text-muted">4.5. </span>Emails</h6>
+
+                                <ol>
+                                    <li class="pb-1">Go to <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Settings <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Email</span>.</li>
+                                    <li class="pb-1">Change the <code class="badge badge-dark">Driver</code> field value to <code class="badge badge-dark">SMTP</code>.</li>
+                                    <li>Fill in the rest of the fields with your SMTP credentials.</li>
+                                </ol>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="configuration-captcha"><span class="text-muted">4.6. </span>Captcha</h6>
+
+                                <p>The Captcha system relies on Google reCAPTCHA's API.</p>
+
+                                <ol>
+                                    <li class="pb-1">Login into your <a href="https://www.google.com/recaptcha/admin/create" target="_blank" rel="nofollow" class="text-primary font-weight-medium">Google reCAPTCHA</a> account.</li>
+
+                                    <li class="pb-1"><a href="https://www.google.com/recaptcha/admin/create" target="_blank" rel="nofollow" class="text-primary font-weight-medium">Create</a> a new <span class="font-weight-medium">reCAPTCHA v2 Invisible Badge</span>.</li>
+
+                                    <li class="pb-1">Fill all the other fields with the requested information.</li>
+
+                                    <li>Copy the <code class="badge badge-dark">Site key</code> and the <code class="badge badge-dark">Secret key</code> in <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Settings <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Captcha</span>.</li>
+                                </ol>
+                            </div>
+
+                            <div class="doc-section subsection mt-5">
+                                <h6 class="font-weight-bold py-2" id="configuration-captcha"><span class="text-muted">4.7. </span>Google Safe Browsing</h6>
+
+                                <ol>
+                                    <li class="pb-1">Follow the <a href="https://developers.google.com/safe-browsing/v4/get-started" rel="nofollow" target="_blank">Google Safe Browsing</a> guide to obtain an <span class="font-weight-medium">API key</span>.</li>
+
+                                    <li>Copy the <code class="badge badge-dark">API key</code> in <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Settings <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Shortener</span>.</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <hr class="my-5">
+
+                        <div class="doc-section mb-5">
+                            <h4 class="py-2 font-weight-semibold" id="update"><span class="text-muted">5. </span>Update</h4>
+
+                            <div class="alert alert-danger">
+                                <div class="font-weight-bold mb-4">Important notice for v3.5.0</div>
+
+                                <div class="mb-4">This new version brings significant new features and changes, mainly to the payment system, which was extended from Stripe, to include PayPal, Coinbase and Bank payments, which has a few downsides, as following:</div>
+
+                                <div class="section mb-4">
+                                    <div class="font-weight-bold pb-2">1. Subscriptions</div>
+                                    <div>All current subscriptions will be lost. You will have to manually cancel each subscription from your Stripe dashboard, and manually assign the rest of the subscription duration for each user via <span class="font-weight-medium d-inline-flex align-items-center">Admin <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Users <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Edit<svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-muted width-3 height-3 mx-2" viewBox="0 0 7.41 12"><path d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"></path></svg></span> <span class="font-weight-medium d-inline-flex align-items-center">Plan</span>. Users who wish to be on a recurring plan will have to subscribe again.</div>
+                                </div>
+
+                                <div class="section mb-4">
+                                    <div class="font-weight-bold pb-2">2. Cronjobs</div>
+                                    <div>The cron jobs need to be set again, as their URL path have changed. See: <a class="alert-link" href="https://lunatio.com/phpshort/documentation#installation-cronjobs">Setting up the cron jobs</a> for additional information.</div>
+                                </div>
+
+                                <div class="section">
+                                    <div class="font-weight-bold pb-2">3. Stripe webhook</div>
+                                    <div>The stripe webhook needs to be set again, as the webhook path has changed. See: <a class="alert-link" href="https://lunatio.com/phpshort/documentation#configuration-payment-stripe">Configuring Stripe</a> for additional information.</div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-warning">Before making an update, always remember to do a complete backup of your website.</div>
+                            <div class="alert alert-warning">If you've made any modifications to the software's files, your changes will be lost.</div>
+
+                            <ol>
+                                <li class="pb-1">Make a backup of the <code class="badge badge-dark">.env</code> config file located on your server.</li>
+                                <li class="pb-1">Upload and replace all the files on your server with what's inside the <code class="badge badge-dark">Script</code> folder.</li>
+                                <li class="pb-1">Restore your <code class="badge badge-dark">.env</code> config file on your server.</li>
+                                <li>Go to <code class="badge badge-dark">https://example.com/update</code> and follow the update wizard.<sup>1</sup></li>
+                            </ol>
+
+                            <ol class="text-muted small">
+                                <li class="pb-1">Updates that do not have database changes, will not show up in the update wizard.</li>
+                            </ol>
+                        </div>
+
+                        <hr class="my-5">
+
+                        <div class="doc-section mb-5">
+                            <h4 class="py-2 font-weight-semibold" id="faq"><span class="text-muted">6. </span>FAQ</h4>
+
+                            <ul>
+                                <li class="pb-4">
+                                    <div class="font-weight-medium">I have a support inquiry, a question or a problem, how can I contact you?</div>
+                                    <div class="text-muted">You can contact us <a href="https://lunatio.com/contact" target="_blank" rel="nofollow" class="text-primary font-weight-medium">here</a>.</div>
+                                </li>
+
+                                <li class="pb-4">
+                                    <div class="font-weight-medium">What hosting do you recommend?</div>
+                                    <div class="text-muted">We recommend using <a href="https://m.do.co/c/a2590f642b71" target="_blank" rel="nofollow" class="text-primary font-weight-medium">DigitalOcean</a>, as they offer great performance and flexibility at an affordable price.</div>
+                                </li>
+
+                                <li class="pb-4">
+                                    <div class="font-weight-medium">Is installation included in the price?</div>
+                                    <div class="text-muted">No, installation is not included. We offer installation services for an extra fee, please consult the <a href="https://lunatio.com/services" class="text-primary font-weight-medium" data-scroll-to="75">Services</a> section for more details.</div>
+                                </li>
+
+                                <li class="pb-4">
+                                    <div class="font-weight-medium">My custom domain is not working, why?</div>
+                                    <div class="text-muted">If you're on a managed environment, such as cPanel or Plesk, you need to manually add your custom domain in your panel, with the same root directory as the software's installation.</div>
+                                </li>
+
+                                <li class="pb-4">
+                                    <div class="font-weight-medium">My website returns a Not Found message, why?</div>
+                                    <div class="text-muted">Please ensure that you have <code class="badge badge-dark">mod_rewrite</code> enabled on your server.</div>
+                                </li>
+
+                                <li class="pb-4">
+                                    <div class="font-weight-medium">How can I translate my website?</div>
+                                    <div class="text-muted">Make a copy of the default <code class="badge badge-dark">en.json</code> language file found in <code class="badge badge-dark">/resources/lang</code> folder, and change it according to your needs.</div>
+                                </li>
+
+                                <li class="pb-4">
+                                    <div class="font-weight-medium">My website returns a blank page, why?</div>
+                                    <div class="text-muted">This generally happens when one of the server requirements is not met, please ensure your server meets the software's requirements.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        'use strict'
+
+        document.addEventListener('DOMContentLoaded', function () {
+            let spacingSize = 22;
+            let headerSize = document.querySelector("#header-2").offsetHeight;
+
+            document.querySelectorAll('a[href*="#"]').forEach(function (element) {
+                // Listen for all hashtag clicks
+                element.addEventListener('click', function (e) {
+                    // Scroll to the id, with an offset
+                    setTimeout(function () {
+                        window.scrollTo(0, window.pageYOffset + document.querySelector(window.location.hash).getBoundingClientRect().top - headerSize - spacingSize);
+                    }, 1);
+                });
+            });
+
+            // If the URL has a hashtag in it
+            if (window.location.hash) {
+                // Scroll to the ID, with an offset
+                setTimeout(function () {
+                    window.scrollTo(0, window.pageYOffset + document.querySelector(window.location.hash).getBoundingClientRect().top - headerSize - spacingSize);
+                }, 1);
+            }
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY >= 179) {
+                    document.querySelector('#navbar-documentation').classList.add('position-lg-fixed');
+                    document.querySelector('#navbar-documentation').style.top = (spacingSize + headerSize) + 'px';
+                } else {
+                    document.querySelector('#navbar-documentation').classList.remove('position-lg-fixed');
+                }
+            }, false);
+        });
+    </script>
+
+        <footer id="footer" class="footer bg-gray-900 text-white-50">
+    <div class="container py-5">
+                    <div class="row">
+                <div class="col-12">
+                    <ul class="nav p-0 mx-n3 mb-3 mb-lg-0 d-flex flex-column flex-lg-row">
+                        <li class="nav-item">
+                            <a href="https://lunatio.com/" class="nav-link text-light py-1">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="https://lunatio.com/services" class="nav-link text-light py-1">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="https://lunatio.com/contact" class="nav-link text-light py-1">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-darker">
+                <div class="row">
+            <div class="col-12 col-lg order-2 order-lg-1">
+                <div class="text-muted py-1">© 2021 Lunatio. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+</footer>        
+    </div>
+    
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

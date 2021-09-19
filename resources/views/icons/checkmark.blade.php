@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ isset($class) ? $class : '' }}" viewBox="0 0 17.44 13.13"><g id="61594a51-9b02-49ff-a94c-05e8c8f16478" data-name="Layer 2"><g id="21687ac0-78b2-4ea5-8955-fcde8112835a" data-name="Layer 30"><path d="M16,0,5.72,10.28,1.44,6,0,7.44l5,5,.72.69.72-.69,11-11Z"/></g></g></svg>

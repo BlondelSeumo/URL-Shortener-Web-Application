@@ -1,0 +1,266 @@
+// Positions
+
+$positions: (
+        fixed
+) !default;
+
+@each $breakpoint, $breakpoint-value in $grid-breakpoints {
+  @include media-breakpoint-up($breakpoint) {
+    @each $position in $positions {
+      .position-#{$breakpoint}-#{$position} {
+        position: $position !important;
+      }
+    }
+  }
+}
+
+
+$z-index-breakpoints: false !default;
+
+$z-indexes: (
+        0,
+        1,
+        2,
+        10,
+        100,
+        1000,
+        1001,
+        1025,
+        1030
+) !default;
+
+@each $z-index in $z-indexes {
+  .z-#{$z-index} {
+    z-index: $z-index !important;
+  }
+}
+
+
+// Cursors
+
+$cursors: (
+        auto,
+        default,
+        pointer,
+        wait,
+        text,
+        move,
+        not-allowed,
+        help
+) !default;
+
+@each $cursor in $cursors {
+  .cursor-#{$cursor} {
+    cursor: $cursor !important;
+  }
+}
+
+
+// Shadows
+
+$shadows: (
+        "": $box-shadow,
+        sm: $box-shadow-sm,
+        lg: $box-shadow-lg
+) !default;
+
+$hover: "";
+
+@each $breakpoint, $breakpoint-value in $grid-breakpoints {
+  @include media-breakpoint-up($breakpoint) {
+    @each $shadow, $value in $shadows {
+      $separator: "";
+      @if $shadow {
+        $separator: "-";
+      }
+
+      .shadow-#{$breakpoint}#{$separator}#{$shadow} {
+        box-shadow: #{$value} !important;
+      }
+    }
+  }
+}
+
+
+// Width & height rem sizes
+
+$remSizes: (
+        0: 0rem,
+        1: 0.25rem,
+        2: 0.5rem,
+        3: 0.75rem,
+        4: 1rem,
+        5: 1.25rem,
+        6: 1.5rem,
+        8: 2rem,
+        9: 2.25rem,
+        10: 2.5rem,
+        12: 3rem,
+        14: 3.5rem,
+        16: 4rem,
+        20: 5rem,
+        24: 6rem,
+        32: 8rem,
+        40: 10rem,
+        48: 12rem,
+        56: 14rem,
+        64: 16rem
+) !default;
+
+@each $prop, $abbrev in (width: width, height: height) {
+  @each $key, $value in $remSizes {
+    .#{$abbrev}-#{$key} { #{$prop}: unquote($value + ' ' + !important) }
+  }
+}
+
+// Font Sizes
+
+$font-sizes: (
+        xs: .75,
+        sm: .875,
+        base: 1,
+        lg: 1.125,
+        xl: 1.25
+) !default;
+
+@each $key, $value in $font-sizes {
+  .font-size-#{$key} {
+    font-size: unquote(#{$value} + 'rem ' + !important);
+  }
+}
+
+
+// Font Weight
+
+$font-weights: (
+        medium: 500,
+        semibold: 600
+) !default;
+
+@each $key, $value in $font-weights {
+  .font-weight-#{$key} {
+    font-weight: #{$value} !important;
+  }
+}
+
+
+// Select Text
+
+$select-text: (
+        none, text, all, auto
+) !default;
+
+@each $value in $select-text {
+  .select-#{$value} {
+    -webkit-user-select: #{$value} !important;
+    -ms-user-select: #{$value} !important;
+    user-select: #{$value} !important;
+  }
+}
+
+
+// Borders
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .border#{$infix}-top {      border-top: $border-width solid $border-color ; }
+    .border#{$infix}-right {    border-right: $border-width solid $border-color ; }
+    .border#{$infix}-bottom {   border-bottom: $border-width solid $border-color ; }
+    .border#{$infix}-left {     border-left: $border-width solid $border-color ; }
+
+    .border#{$infix}-top-0 {    border-top: 0 !important; }
+    .border#{$infix}-right-0 {  border-right: 0 !important; }
+    .border#{$infix}-bottom-0 { border-bottom: 0 !important; }
+    .border#{$infix}-left-0 {   border-left: 0 !important; }
+
+    .border#{$infix} { border: $border-width solid $border-color; }
+
+    .border#{$infix}-x {
+      border-left: $border-width solid $border-color ;
+      border-right: $border-width solid $border-color ;
+    }
+
+    .border#{$infix}-y {
+      border-top: $border-width solid $border-color ;
+      border-bottom: $border-width solid $border-color ;
+    }
+  }
+}
+
+
+// Border Radius
+
+$border-radius-sizes: (
+        10: 10%,
+        15: 15%,
+        20: 20%,
+        25: 25%,
+        30: 30%,
+        35: 35%,
+        45: 45%
+) !default;
+
+@each $size, $value in $border-radius-sizes {
+  .border-radius-#{$size} {
+    border-radius: #{$value} !important;
+  }
+}
+
+
+// Opacity
+
+$opacities: (
+        0: 0,
+        5: 0.05,
+        10: 0.1,
+        20: 0.2,
+        30: 0.3,
+        40: 0.4,
+        50: 0.5,
+        60: 0.6,
+        70: 0.7,
+        80: 0.8,
+        90: 0.9,
+        100: 1
+) !default;
+
+@each $opacity, $value in $opacities {
+  .opacity-#{$opacity} {
+    opacity: $value !important;
+  }
+}
+
+
+// Element positioning top, right, bottom, left
+
+@each $prop, $abbrev in (top: top, right: right, bottom: bottom, left: left) {
+  .#{$abbrev}-0 {
+    #{$prop}: 0 !important
+  }
+}
+
+// Additional background colors
+// Additional text colors
+
+$additional-colors: (
+        'cyan': #43b1e6,
+        'blue': #3684f9,
+        'purple': #7971ff,
+        'magenta': #bb61ff,
+        'pink': #ff5c88,
+        'rose': #ff6e68
+) !default;
+
+@each $name, $color in $additional-colors {
+  .bg-#{$name} {
+    background-color: #{$color} !important;
+  }
+}
+
+@each $name, $color in $additional-colors {
+  .text-#{$name} {
+    color: #{$color} !important;
+  }
+}
